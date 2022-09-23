@@ -77,9 +77,7 @@ export default function Layout() {
   return (
     <div  className=" w-[80%] sm:w-[60%] mt-4">
        <div className='flex items-end -translate-y-20 '>
-        <input type="text" placeholder="Add task"  className="bg-white w-full border-[1px] border-gray-500 mt-6 rounded-lg outline-none p-2 mr-6" onChange={(e)=> setSearch(e.target.value.toUpperCase())} />
-
-        <button className='bg-green-500 text-white px-10 py-2 rounded-lg ml-4' >Search</button>
+        <input type="text" placeholder="Search task here"  className="bg-white w-full border-[1px] border-gray-500 mt-6 rounded-lg outline-none p-2 mr-6" onChange={(e)=> setSearch(e.target.value.toUpperCase())} />
         </div>
        <h1 className="font-extrabold text-3xl text-center">#todo</h1>
         <div className='flex  items-center justify-between border-b-[1px] border-gray-400 '>
