@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 // import { TrashIcon } from '@heroicons/react/outline'
-import { TrashOutline } from 'heroicons-react'
+// import { TrashOutline } from 'heroicons-react'
+import { TrashIcon } from '@heroicons/react/outline'
 export default function Complete({setMapData, mapData,change , setChange}) {
 
    const [showText, setShowText] = useState(false)
@@ -32,7 +33,7 @@ export default function Complete({setMapData, mapData,change , setChange}) {
                         <p className='ml-4 text-md font-semibold  line-through
                      '>{data.value}</p>
                 </div>
-                <TrashOutline className='h-4 w-4' onClick={()=>deleteTodo(index)} />
+                <TrashIcon className='h-4 w-4' onClick={()=>deleteTodo(index)} />
                      </>
                     )
                 }
