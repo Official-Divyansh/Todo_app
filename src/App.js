@@ -1,11 +1,12 @@
-import Layout from "./component/Layout";
-
+import logo from './logo.svg';
+import './App.css';
+import Layout from './component/Layout';
 
 function App() {
   return (
     <div className=" h-screen w-screen flex flex-col items-center justify-center">
-      <h1 className="font-extrabold text-3xl">#todo</h1>
-      <Layout/>
+      {/* <h1 className="font-extrabold text-3xl">#todo</h1> */}
+    <Layout />
     </div>
   );
 }
